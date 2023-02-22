@@ -1,7 +1,9 @@
+import { ListOfPost } from "./ListOfPost";
 
-const Post = () => {
+const Post = async( {params}) => {
+
   return (
-    <h1>Post</h1>
+    <ListOfPost/>
   )
 }
 

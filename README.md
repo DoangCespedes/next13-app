@@ -1,38 +1,19 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+/---------------------------------------  NEXT JS 3 PRACTICES  -------------------------------------------/
+ES IMPORTANTE SABER DE ENTRADE que el archivo layout.js sera nuestra app y esta contendra los estilos globales , ademas de los componentes que queramos llevar en cada pagina de nuestra aplicacion.
 
-## Getting Started
+LOS STYLES GLOBALES se declaran en el layout.js 
 
-First, run the development server:
+TAMBIEN PODEMOS DELARAR ESTILOS INDEPENDIENTES por cada modulo 
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+PRINCIPALMENTE  es importante considerar que el aporte mas grande que nos da next es la paginacion ademas de las rutas que pueden ser anidadas ejm :
+        En la carpeta app podemos estructurar las pages, estas se crean de la siguiente manera: 
+            1.) Se crea una carpeta con el nombre de la pagina y dentro de esta carpeta un file con el nombre page.js o extencion jsx 
+        Tambien podemos crearlas anidadas de la siguiente manera: 
+            2.) Debemos hacer otra carpeta dentro de id con su archivo page y la ruta quedaria asi localhost300/post/id/nueva-ruta, para un mejor ejmplo leer los modulos dentro de la carpeta Post alojada dentro de app
+        Ademas estan pueden ser dinamicas consumiendo un servicio para pintar la pagina asi como se hace desde el modulo ListOfPost.jsx
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+PODEMOS CREAR LA NAVEGACION muy facilmente como lo hicimos en los documents Navigation creando un arreglo de los titulos del navbar y recorriendolos por un map
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
