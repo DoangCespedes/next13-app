@@ -15,5 +15,7 @@ PRINCIPALMENTE  es importante considerar que el aporte mas grande que nos da nex
 PODEMOS CREAR LA NAVEGACION muy facilmente como lo hicimos en los documents Navigation creando un arreglo de los titulos del navbar y recorriendolos por un map
 
 
+soy gay prueba
+
 
 
